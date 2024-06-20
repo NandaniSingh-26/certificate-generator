@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Certificate</title>
+</head>
+<body>
+    <h1>Certificate Verification</h1>
+    <p>Name: {{ certificate.name }}</p>
+    <p>Father Name: {{ certificate.father_name }}</p>
+    <p>Certificate Number: {{ certificate.certificate_number }}</p>
+    <p>Roll No: {{ certificate.roll_no }}</p>
+    <p>Certificate Type: {{ certificate.get_certificate_type_display }}</p>
+    <p>Issue Date: {{ certificate.issue_date }}</p>
+    <p>Status: Verified</p>
+</body>
+</html>

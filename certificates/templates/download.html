@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Certificates</title>
+</head>
+<body>
+    <h1>Download Certificates</h1>
+    <ul>
+        {% for link in download_links %}
+        <li><a href="{{ link }}">Download Certificate {{ forloop.counter }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <!-- Link for downloading all certificates as ZIP -->
+    <a href="{% url 'download_all_certificates' %}" class="btn btn-primary">Download All Certificates (ZIP)</a>
+
+</body>
+</html>
